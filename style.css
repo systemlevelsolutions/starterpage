@@ -580,6 +580,34 @@ h1.entry-title {
     animation: pulse 2s infinite;
 }
 
+.coming-image {
+    width: calc(30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coming-image h4 {
+    color: var(--main-body-color);
+}
+.coming-image .img-box {
+    position: relative;
+    margin-bottom: 32px;
+}
+.coming-image .img-box::before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: -30px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #fafafa;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    animation: animate-img-circle 8s linear infinite;
+}
+
 @keyframes pulse {
     0% {        
         transform: scaleX(1);
