@@ -66,14 +66,12 @@
 
 
 <!-- Home Section -->
-<div id="home" class="section full-width-section">
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <!-- Using a sample video from the web -->
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<div id="home" class="section full-width-section" style="height: 600px; position: relative;">
+    <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+        <!-- Using a sample video from the web -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="section-wrapper block content-1140 center-relative">                        
         <div class="content-wrapper">                            
             <div class="col-12 col-md-6 p-0 m-0">
@@ -89,6 +87,8 @@
             </div>                            
         </div>
     </div>
+</div>
+
 </div>
     </div>
 </div>
