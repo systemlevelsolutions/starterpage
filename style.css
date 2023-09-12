@@ -805,13 +805,25 @@ a.button-dot:hover:before {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 77px);    
-    display: flex;
+    min-height: calc(100vh - 77px); /* Adjust 77px if your header height changes */
+    position: relative;
+}
+
+/* Position the video to cover the entire #home section */
+#home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Ensure the video sits below other content in the #home section */
 }
 
 #home .section-wrapper {
     margin: auto;
     padding: 0;
+    z-index: 1; /* Ensure the content inside the section-wrapper sits above the video */
 }
 
 h1.big-text {
@@ -819,6 +831,11 @@ h1.big-text {
     font-size: 80px;
     line-height: 120%;
     margin-bottom: 40px;
+}
+
+/* Ensure the header sits above the video */
+.header-holder {
+    z-index: 1001 !important; /* Increase the z-index value */
 }
 
 
