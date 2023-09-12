@@ -55,19 +55,19 @@ body {
     font-size: 18px;
     line-height: 35px;
     font-weight: 400;
-    color: #b3b3b3;
-    background-color: #ffffff;
+    color: #B0A295; /* Gentle Taupe */
+    background-color: #F5F5F5; /* Light Cream */
     overflow-x: hidden;
 }
 
 body a {
     text-decoration: none;
-    color: #47ea4e;
+    color: #A8C0CE; /* Misty Blue */
     transition: color .3s ease;
 }
 
 body a:hover {
-    color: #47ea4e; 
+    color: #E6E6FA; /* Pale Lavender */
 }
 
 body p, 
@@ -129,14 +129,14 @@ body pre {
 
 
 .header-holder {
-    z-index: 1000 !important;
-    background-color: transparent; 
-    transition: background-color 0.5s ease;
+    z-index: 99 !important;
+    background-color: #D3D3D3; /* Soft Gray */
     width: 100% !important;
     top: 0;
     position: fixed;
     -webkit-transform: translateZ(0);    
 }
+
 
 .sticky-wrapper {
     height: 77px !important;
@@ -218,7 +218,7 @@ body pre {
 
 .sm-clean li a.menu-item-link {
     cursor: pointer;
-    color: black; /* Initial color set to white */
+    color: #B0A295; /* Gentle Taupe */
     transition: color 0.5s ease;
 }
 
@@ -244,7 +244,7 @@ body pre {
         background-color .3s ease;
     padding: 15px;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: #D3D3D3;
 }
 
 .sm-clean ul a, 
@@ -281,7 +281,7 @@ body .sm-clean li.current_page_item > a {
 }
 
 .sm-clean ul {    
-    background-color: #000;
+    background-color: #D3D3D3;
 }
 
 .sm-clean a.has-submenu {
@@ -354,7 +354,7 @@ body .sm-clean li.current_page_item > a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #47ea4e;
+    background-color: #A8C0CE; /* Misty Blue */
     width: 285px;
     display: inline-block;
     z-index: 98;
@@ -367,7 +367,7 @@ body .sm-clean li.current_page_item > a {
     height: 0;
     border-style: solid;
     border-width: 130px 60px 0 0;
-    border-color: #47ea4e transparent transparent transparent;
+    border-color: #A8C0CE transparent transparent transparent; /* Misty Blue */
     position: absolute;
     top: 0;
     right: 0;
@@ -828,7 +828,7 @@ h1.big-text {
 
 #services {
     background-image: url(images/on_black_left.png);
-    background-color: #000000;
+    background-color: #D3D3D3; /* Soft Gray */
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -873,7 +873,7 @@ h1.big-text {
 
 #about {
     background-image: url(images/on_white_right.png);
-    background-color: #ffffff;
+    background-color: #E6E6FA; /* Pale Lavender */
     background-position: right center;
     background-repeat: no-repeat;
     background-size: auto;
