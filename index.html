@@ -430,20 +430,16 @@ At System Level Solutions, we believe effective change requires looking at the w
         var navbar = document.querySelector('.header-holder');
         var links = document.querySelectorAll('.main-menu a');
 
-        // Adjust the threshold as needed. 200 means the effect starts when the user has scrolled 200 pixels.
-        if (scrollPosition > 200) {
-            navbar.style.backgroundColor = '#333'; // or any desired color for the navbar
-            links.forEach(function(link) {
-                link.style.color = 'white';
-            });
-        } else {
-            navbar.style.backgroundColor = 'transparent';
-            links.forEach(function(link) {
-                link.style.color = 'black';
-            });
-        }
+        // Calculate opacity based on scroll position for smoother transition
+        var opacity = Math.min(scrollPosition / 400, 1); // 400 is a threshold, adjust for desired effect
+
+        navbar.style.backgroundColor = `rgba(6, 6, 6, ${opacity})`;
+        links.forEach(function(link) {
+            link.style.color = `rgba(255, 255, 255, ${opacity})`;
+        });
     });
 </script>
+
 
     </body>
 </html>
