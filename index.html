@@ -424,6 +424,26 @@ At System Level Solutions, we believe effective change requires looking at the w
         <script>
     document.getElementById('backgroundVideo').playbackRate = 0.8;
 </script>
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        var navbar = document.querySelector('.header-holder');
+        var links = document.querySelectorAll('.main-menu a');
+
+        // Adjust the threshold as needed. 200 means the effect starts when the user has scrolled 200 pixels.
+        if (scrollPosition > 200) {
+            navbar.style.backgroundColor = '#333'; // or any desired color for the navbar
+            links.forEach(function(link) {
+                link.style.color = 'white';
+            });
+        } else {
+            navbar.style.backgroundColor = 'transparent';
+            links.forEach(function(link) {
+                link.style.color = 'black';
+            });
+        }
+    });
+</script>
 
     </body>
 </html>
