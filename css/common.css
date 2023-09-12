@@ -187,21 +187,33 @@
 }
 
 blockquote {
-    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 50px;
+    font-size: 21px;
+    line-height: 34px;
+    position: relative;
     color: #000;
-    border-left: 8px solid #d95f41;
-    padding-left: 20px;
-    font-size: 24px;
-    line-height: 35px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 95px;
 }
 
 blockquote cite {
     margin-top: 20px;
     display: block;
     font-weight: 400;
+}
+
+blockquote:before {
+    content: "";
+    background-image: url("../images/quotes_image.png");
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    position: absolute;
+    top: -50px;
 }
 
 iframe {
@@ -273,91 +285,4 @@ sup {
 sub {
     vertical-align: sub;
     font-size: smaller;
-}
-
-div.pp_default .pp_loaderIcon {
-    display: none !important;
-}
-
-div.pp_default a.pp_arrow_previous {
-    background-image: url(../images/nav_left.png);
-    background-size: 20px 20px;    
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -99999999px;
-    transition: transform .3s ease;
-}
-
-div.pp_default a.pp_arrow_next {
-    background-image: url(../images/nav_right.png);
-    background-size: 20px 20px;    
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -99999999px;
-    transition: transform .3s ease;
-}
-
-div.pp_default a.pp_arrow_previous:hover {
-    transform: translateX(-5px);
-}
-
-div.pp_default a.pp_arrow_next:hover {
-    transform: translateX(5px);
-}
-
-div.pp_default .pp_close {
-    background-image: url(../images/close.png);
-    background-size: 20px 20px;
-    text-indent: -99999999px;
-    font-size: 0;
-    line-height: 0;
-    background-repeat: no-repeat;
-    background-position: top right;
-    margin: 0;
-    position: fixed;
-    right: 25px;
-    top: 25px;
-}
-
-div.pp_default .pp_next:hover {
-    background: url(../images/nav_right.png);
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-    background-size: 20px;
-}
-
-div.pp_default .pp_previous:hover {
-    background: url(../images/nav_left.png);
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: 5% 50%;
-    background-size: 20px;    
-}
-
-div.pp_default .pp_nav .currentTextHolder {
-    padding: 0 0 0 20px;
-    color: #fff;
-}
-
-div.pp_default .pp_content_container .pp_details {
-    margin-top: 30px !important;
-    z-index: 3;
-}
-
-div.pp_default .pp_description {
-    font-size: 15px;
-    line-height: 30px;
-    position: absolute;
-    top: -30px;
-    margin: 0;
-    color: #fff;
-    font-weight: 400;
 }
