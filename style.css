@@ -129,8 +129,8 @@ body pre {
 
 
 .header-holder {
-    z-index: 1000 !important;
-    background-color: transparent; 
+    z-index: 1001 !important; /* Ensure the header is above the home section */
+    background-color: transparent;  
     transition: background-color 0.5s ease;
     width: 100% !important;
     top: 0;
@@ -806,11 +806,11 @@ a.button-dot:hover:before {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 77px); /* Adjust 77px if your header height changes */
+    min-height: 100vh; /* Make the home section occupy the full viewport height */
     position: relative;
+    z-index: 999; /* Ensure the home section is below the header but above other content */
 }
 
-/* Position the video to cover the entire #home section */
 #home video {
     position: absolute;
     top: 0;
