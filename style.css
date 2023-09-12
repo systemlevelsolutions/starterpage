@@ -127,9 +127,11 @@ body pre {
     2.1 Global Header Logo/Menu CSS
 ====================================== */
 
+
 .header-holder {
     z-index: 99 !important;
-    background-color: #060606;
+    background-color: transparent; /* Set initial background to transparent */
+    transition: background-color 0.3s ease;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -216,7 +218,8 @@ body pre {
 
 .sm-clean li a.menu-item-link {
     cursor: pointer;
-    color: #ffffff;
+    color: black; /* Set initial color to black */
+    transition: color 0.3s ease;
 }
 
 .sm-clean a span.sub-arrow {
