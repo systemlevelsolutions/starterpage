@@ -815,7 +815,7 @@ a.button-dot:hover:before {
 }
 
 h1.big-text {
-    color: #fff;
+    color: #084C61;
     font-size: 80px;
     line-height: 120%;
     margin-bottom: 40px;
@@ -1469,7 +1469,7 @@ body.blog {
     margin: 50px auto;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    color: #fff;
+    color: #084C61;
     background-color: #f1576b;
     padding: 15px 25px;
     border-radius: 50px;
@@ -1731,7 +1731,7 @@ body.blog {
     width: 720px;
     margin: 0 auto 30px;
     max-width: 95%;
-    color: #000;
+    color: #084C61;
     padding-top: 0;
 }
 
