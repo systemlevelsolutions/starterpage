@@ -89,28 +89,36 @@
 
             <div id="content" class="site-content center-relative">        
 
-          <!-- Home Section -->
-<div id="home" class="section no-page-title" style="position: relative; overflow: hidden;"> 
-    <!-- Video Element with an ID for targeting via JavaScript -->
-    <video id="backgroundVideo" width="100%" height="100%" autoplay muted loop style="position: absolute; top: 0; left: 0; z-index: 0; object-fit: cover;">
-        <!-- Source for the video -->
-        <source src="Mp4/clean-corporate-background-2021-09-04-04-21-29-utc.mp4" type="video/mp4">
-        <!-- Fallback image in case video doesn't load. You'll need to provide the correct path for the fallback image -->
-        <img src="images/path-to-fallback-image.jpg" alt="Fallback Image" style="max-width: 100%; display: block;">
-    </video>
+        <!-- Home Section -->
+<div id="home" class="section no-page-title" style="position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center;"> 
+    <!-- Video Element -->
+    <video id="backgroundVideo" width="100%" height="100%" autoplay muted loop style="position: absolute; top: 0; left: 0; z-index: 0; object-fit: cover;"></video>
 
-    <div class="section-wrapper block content-1170 center-relative">                                                
-        <div class="content-wrapper" style="position: relative; z-index: 1;">                           
-            <h1 class="big-text">
-                Real Change <br>                               
-                For Ambitious Organizations
-            </h1>
-            <div class="button-holder text-left">
-                <a href="#portfolio" class="button">LEARN MORE</a>
-            </div>
-        </div>                        
+    <!-- Text Content -->
+    <div class="content-wrapper" style="flex: 1; max-width: 50%; padding: 20px; z-index: 1;">
+        <h1 class="big-text">
+            Technology <br>                               
+            & Visual Agency
+        </h1>
+        <div class="button-holder text-left">
+            <a href="#portfolio" class="button">LEARN MORE</a>
+        </div>
     </div>
+
+    <!-- Circle Frame for Image -->
+    <div class="circle-image" style="flex: 1; max-width: 50%; padding: 20px; z-index: 1; background: url('images/path-to-your-image.jpg') center/cover no-repeat; border-radius: 50%; width: 300px; height: 300px;"></div>
 </div>
+
+<!-- Add this style for mobile optimization -->
+<style>
+    @media (max-width: 768px) {
+        #home .content-wrapper, 
+        #home .circle-image {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+    }
+</style>
 
                 <!-- About Section -->
                 <div id="about" class="section">                   
