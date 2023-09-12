@@ -129,9 +129,9 @@ body pre {
 
 
 .header-holder {
-    z-index: 1000 !important; /* Increase z-index to ensure it's above the video */
+    z-index: 1000 !important;
     background-color: transparent; 
-    transition: background-color 0.5s ease; /* Increase transition duration for smoother effect */
+    transition: background-color 0.5s ease;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -218,12 +218,12 @@ body pre {
 
 .sm-clean li a.menu-item-link {
     cursor: pointer;
-    color: black; 
-    transition: color 0.5s ease; /* Increase transition duration for smoother effect */
+    color: white; /* Initial color set to white */
+    transition: color 0.5s ease;
 }
 
 .sm-clean li a.menu-item-link:hover {
-    color: #47ea4e; /* Hover color, adjust as needed */
+    color: #47ea4e; /* Hover color */
 }
 
 .sm-clean a span.sub-arrow {
