@@ -425,6 +425,14 @@ At System Level Solutions, we believe effective change requires looking at the w
     document.getElementById('backgroundVideo').playbackRate = 0.8;
 </script>
 
+        window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header-holder');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
     </body>
 </html>
