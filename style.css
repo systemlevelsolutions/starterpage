@@ -129,16 +129,13 @@ body pre {
 
 
 .header-holder {
-    position: absolute;
+    z-index: 1000 !important;
+    background-color: transparent; 
+    transition: background-color 0.5s ease;
+    width: 100% !important;
     top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-.header-holder.scrolled {
-    background-color: #000; /* or any desired color */
+    position: fixed;
+    -webkit-transform: translateZ(0);    
 }
 
 .sticky-wrapper {
@@ -357,7 +354,7 @@ body .sm-clean li.current_page_item > a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #47ea4e;
+    background-color: #177E89;
     width: 285px;
     display: inline-block;
     z-index: 98;
@@ -370,7 +367,7 @@ body .sm-clean li.current_page_item > a {
     height: 0;
     border-style: solid;
     border-width: 130px 60px 0 0;
-    border-color: #47ea4e transparent transparent transparent;
+    border-color: #177E89 transparent transparent transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -537,7 +534,7 @@ body .social a:hover {
 body a.button {
     display: inline-block;
     color: #fff;
-    background-color: #47ea4e;
+    background-color: #177E89;
     text-align: left;
     padding: 10px 40px;
     cursor: pointer;
@@ -545,7 +542,7 @@ body a.button {
     text-decoration: none;
     transition: all .2s linear;
     margin-bottom: 17px;
-    border: 2px solid #47ea4e;
+    border: 2px solid #177E89;
     border-radius: 50px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -554,7 +551,7 @@ body a.button {
 
 a.button:hover {
     background-color: transparent;
-    color: #47ea4e;
+    color: #177E89;
 }
 
 a.button-dot {
