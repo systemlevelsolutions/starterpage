@@ -424,21 +424,6 @@ At System Level Solutions, we believe effective change requires looking at the w
         <script>
     document.getElementById('backgroundVideo').playbackRate = 0.8;
 </script>
-<script>
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var navbar = document.querySelector('.header-holder');
-        var links = document.querySelectorAll('.main-menu a');
-
-        // Calculate opacity based on scroll position for smoother transition
-        var opacity = Math.min(scrollPosition / 400, 1); // 400 is a threshold, adjust for desired effect
-
-        navbar.style.backgroundColor = `rgba(6, 6, 6, ${opacity})`;
-        links.forEach(function(link) {
-            link.style.color = `rgba(255, 255, 255, ${opacity})`;
-        });
-    });
-</script>
 
 
     </body>
