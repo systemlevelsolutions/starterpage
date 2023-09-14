@@ -911,11 +911,12 @@ h1.big-text {
 #about .one_half.last {
     position: relative;  /* Ensure the container has a relative position */
     overflow: hidden;    /* Hide any part of the image that exceeds the container's boundaries */
+    height: 100%;        /* Ensure the container takes the full height of its parent */
 }
 
 #about .one_half.last img {
-    width: 100%;         /* Make the image take the full width of its container */
-    height: 100%;        /* Make the image take the full height of its container */
+    width: 80%;         /* Make the image take the full width of its container */
+    height: 80%;        /* Make the image take the full height of its container */
     object-fit: cover;   /* Ensure the image covers the entire container */
     display: block;      /* Remove any default margins/paddings */
 }
