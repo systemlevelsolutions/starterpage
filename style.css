@@ -908,11 +908,16 @@ h1.big-text {
     height: 100%;  /* Set the height to 100% of the parent */
 }
 
+#about .one_half.last {
+    position: relative;  /* Ensure the container has a relative position */
+    overflow: hidden;    /* Hide any part of the image that exceeds the container's boundaries */
+}
+
 #about .one_half.last img {
-    height: 60%;  /* Set the image height to 60% of the parent */
-    width: auto;  /* Maintain the image's aspect ratio */
-    display: block;  /* Remove any default margins/paddings */
-    margin: 0 auto;  /* Center the image horizontally */
+    width: 100%;         /* Make the image take the full width of its container */
+    height: 100%;        /* Make the image take the full height of its container */
+    object-fit: cover;   /* Ensure the image covers the entire container */
+    display: block;      /* Remove any default margins/paddings */
 }
 
 
