@@ -158,8 +158,8 @@ body pre {
 }
 
 .header-logo img {
-    width: 240px;
-    height: 150px;
+    max-width: 240px;  /* This ensures the logo doesn't exceed 240px in width */
+    height: auto;     /* This maintains the logo's original aspect ratio */
 }
 
 .menu-holder {
