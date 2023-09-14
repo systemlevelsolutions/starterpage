@@ -130,7 +130,7 @@ body pre {
 
 .header-holder {
     z-index: 1001 !important; /* Ensure the header is above the home section */
-    background-color: #000;  
+    background-color: #334258;  
     transition: background-color 0.5s ease;
     width: 100% !important;
     top: 0;
