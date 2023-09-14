@@ -155,7 +155,6 @@ body pre {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    padding-top: 10px; /* Added padding to the top */
 }
 
 .header-logo img {
