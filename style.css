@@ -892,11 +892,27 @@ h1.big-text {
 ====================================== */
 
 #about {
+    position: relative;  /* Ensure the section has a relative position */
     background-image: url(images/on_white_right.png);
     background-color: #ffffff;
     background-position: right center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+#about .section-wrapper {
+    height: 100%;  /* Set the height to 100% of the parent */
+}
+
+#about .content-wrapper {
+    height: 100%;  /* Set the height to 100% of the parent */
+}
+
+#about .one_half.last img {
+    height: 60%;  /* Set the image height to 60% of the parent */
+    width: auto;  /* Maintain the image's aspect ratio */
+    display: block;  /* Remove any default margins/paddings */
+    margin: 0 auto;  /* Center the image horizontally */
 }
 
 
