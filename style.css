@@ -809,7 +809,10 @@ a.button-dot:hover:before {
     min-height: 100vh; /* Make the home section occupy the full viewport height */
     position: relative;
     z-index: 999; /* Ensure the home section is below the header but above other content */
+    padding: 0;
+    margin: 0;
 }
+
 
 #home video {
     position: absolute;
